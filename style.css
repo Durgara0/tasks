@@ -1,0 +1,217 @@
+*{
+	margin:0;
+}
+body{
+	background-color:#f4f4f4;
+	color:#555555;
+	font-family:Arial,Helvetica,sans-serif; 
+	font-size:16px;
+	font-weight:normal; 
+	line-height:1.6em;
+	margin:0;
+}
+.header{ 
+	top:10%;
+	text-align:center;
+	font-size:25px;
+	font-style:regular;
+	font-weight:900;
+	padding:20px;
+	
+}
+.container{
+	top:10%;
+	left:10%;
+	right:10%;
+	position:absolute;
+}
+.id{
+	color:black;
+}
+.list .name{
+	color:black;
+	float:right;
+}
+.emphead{
+	background-color:pink;
+	padding:10px;
+	border-radius:15px;
+}
+.row{
+	margin-bottom:1px;
+	padding:5px;
+	border:1px yellow solid;
+	border-radius:15px;
+	background-color:gray;
+	
+}
+.note{
+	color:red;
+	margin:1px;
+	font-size:15px;
+}
+.row:hover{
+	background-color:#00FF00;
+	padding:15px;
+}
+.newButton{
+	text-align:center;
+	margin:10px;
+}
+.button {
+  background-color:blue;
+  border: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius:50%;
+}
+.container table{
+	border:2px solid black;
+	border-collapse:collapse;
+	background-color:#f2f2d1;
+	width:70%; 
+	margin-left:18%;
+	margin-right:15%;
+}
+.container tr{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+.container th,td{
+	padding:50px;
+	border:1px solid black;
+	border-collapse:collapse;
+}
+a{
+	color:black;
+}
+
+/* The popup (background) */
+.popup {
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  position: fixed; /* Stay in place */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* popup Content */
+.popup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+
+/* popup Header */
+.popup-header {
+  text-align:center;
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  border:10px;
+}
+
+/* popup Body */
+.popup-body {
+	padding: 2px 16px;
+	height:50%;
+	background-color:#00FF00;
+	}
+
+/* popup Footer */
+.popup-footer {
+  padding: 2px 16px;
+  background-color: #00FF00;
+  color: red;
+  float:bottom;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+/* form */
+
+.form{
+ height:75%;
+ background-color:#f2f2d1;
+}
+.form div{
+ padding:10px;
+ font-weight:900;
+ margin:15px;
+}
+.form div input[type="text"],input[type="number"]{
+float:right;
+padding:5px;
+}
+.form input[type="text"],input[type="number"]{
+	font-weight:900;
+}
+/* popup-but */
+.popup-but{
+	height:30%;
+	background-color:#00FFFF;
+	text-align:center;
+}
+.popup-but .but{
+	margin:2px;
+  background-color:blue;
+  border: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius:30%;
+}
+.error{
+	visibility:hidden;
+	color:red;
+	margin-top:10%;
+	text-align:center;
+}
+.empError{
+	visibility:hidden;
+	margin:-14px;
+		color:red;
+	text-align:center;
+}
+#popup-add{
+	padding:15px 42px;
+}
+

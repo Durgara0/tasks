@@ -1,0 +1,66 @@
+
+<html>
+<head>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<script src='home.js'></script>
+</head>
+<body>
+	<div class='list'>
+	<div class='header'>
+		 Employee list
+	</div>
+	<div class="container">
+		<div class='emphead'>
+			<label class='id'>ID</label>
+			<label class='name'>Employee name</label>
+		</div>
+		<form action='\index.html' name='empForm' method='get'>
+			<div class="empbody" method='get'>
+			</div>
+		</form>
+		<div class='newButton'>
+			<button class='button' id='newBut'>new employee</button>
+		</div>
+	</div>
+	</div>
+
+<div class="popup">
+	<div class="popup-content">
+		<div class="popup-header">
+			<span class="close">&times;</span>
+			<h2>Employee Details</h2>
+		</div>
+		<div class="popup-body">
+			<div class="form">
+				<div>
+					<label>EmployeeName:</label>
+					<input type='text' name='name' placeholder='Enter Name' value=''>
+				</div>
+				<div>
+					<label>Age:</label>
+					<input type='number' name='age' min='18' placeholder='Enter age' >
+				</div>
+				<div>
+					<label>salary:</label>
+					<input type='number' name='salary' min='0' placeholder='Enter salary' >
+				</div>
+				<p class='error'>Enter valid details</p>
+			</div>
+			<div class='popup-but'>
+					<button class='but' id='popup-cancel'>cancel</button>
+					<button class='but' id='popup-add'>add</button>
+					
+			</div>
+			
+		</div>
+		<div class="popup-footer">
+			<h3>*ID is automatically added to the employee</h3>
+		</div>
+	</div>	
+</div>
+</body> 
+</html>
+
+
+
+

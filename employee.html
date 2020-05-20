@@ -1,0 +1,74 @@
+<html>
+<head>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class='header'>
+		 Employee Details
+	</div>
+	<div class='container'>
+		<table >
+			<tr>
+				<th>Id</th>
+				<td class='emp id'>1</td>
+			</tr>
+			<tr>
+				<th>NAME</th>
+				<td class='emp employee_name'>Durgarao</td>
+			</tr>
+			<tr>
+				<th>AGE</th>
+				<td class='emp employee_age'>20</td>
+			</tr>
+			<tr>
+				<th>SALARY</th>
+				<td class='emp employee_salary'>20000</td>
+			</tr>
+		</table>		
+
+		<div class='newButton'>
+			<button class='button'>update</button>
+		</div>
+	</div>	
+<div class="popup">
+	<div class="popup-content">
+		<div class="popup-header">
+			<span class="close">&times;</span>
+			<h2>Enter the Details</h2>
+		</div>
+		<div class="popup-body">
+			<div class="form">
+				<div>
+					<label>ID:</label>
+					<input type='text' name='id' placeholder=''  value='' readonly>
+				</div>
+				<div>
+					<label>EmployeeName:</label>
+					<input type='text' name='name' placeholder='Enter Name' value=''>
+				</div>
+				<div>
+					<label>Age:</label>
+					<input type='number' name='age' min='18' placeholder='Enter age' >
+				</div>
+				<div>
+					<label>salary:</label>
+					<input type='number' name='salary' min='0'placeholder='Enter salary' >
+				</div>
+				<p class='empError'>Enter valid details</p>	
+			</div>
+			<div class='popup-but'>		
+					<button class='but' id='popup-cancel'>cancel</button>
+					<button class='but' id='popup-add'>update</button>
+			</div>
+		</div>
+		<div class="popup-footer">
+			<h3>*ID can't be updated</h3>
+		</div>
+	</div>	
+</div>
+<script src='employee.js'>	
+</script>
+
+	
+</body>
+</html>
